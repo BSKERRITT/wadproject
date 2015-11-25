@@ -21,3 +21,31 @@ text-align:center;
 padding-top:20px;
 padding-bottom:20px;
 }
+
+.comedy .sport .history .random{
+    float:left;
+    position:absolute;
+    margin:0 auto;
+}
+
+.row1{
+    float:left;
+    position:absolute;
+    width:auto;
+    height:200px;
+    margin:0 auto;
+}
+
+h1{
+    text-align:center;
+}
+
+h2{
+    text-align:center;
+}
+
+.row2{
+    background-color:yellow;
+    width:auto;
+    height:400px;
+}
