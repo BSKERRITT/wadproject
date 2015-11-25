@@ -1,0 +1,175 @@
+<?xml-stylesheet href="facts.xsl" type="text/xsl"?>
+    <catalog>
+        <genre id="Comedy">
+        <!--facts for tab 1-->
+            <facts>
+                <name id="name">Homer Simpson</name>
+                <fact>Ned Flanders screams like a girl!</fact>
+                <entry>
+                    <entry_date>23rd November 2015</entry_date>
+                    <entry_code>ft001</entry_code>
+                </entry>
+            </facts>
+            <facts>
+                <name id="name">Marge Simpson</name>
+                <fact>Ned Flanders screams like a girl!</fact>
+                <entry>
+                    <entry_date>23rd November 2015</entry_date>
+                    <entry_code>ft001</entry_code>
+                </entry>
+            </facts>
+            <facts>
+                <name id="name">Bart Simpson</name>
+                <fact>Ned Flanders screams like a girl!</fact>
+                <entry>
+                    <entry_date>23rd November 2015</entry_date>
+                    <entry_code>ft001</entry_code>
+                </entry>
+            </facts>
+            <facts>
+                <name id="name">Lisa Simpson</name>
+                <fact>Ned Flanders screams like a girl!</fact>
+                <entry>
+                    <entry_date>23rd November 2015</entry_date>
+                    <entry_code>ft001</entry_code>
+                </entry>
+            </facts>
+            <facts>
+                <name id="name">Maggie Simpson</name>
+                <fact>Ned Flanders screams like a girl!</fact>
+                <entry>
+                    <entry_date>23rd November 2015</entry_date>
+                    <entry_code>ft001</entry_code>
+                </entry>
+            </facts>
+        </genre>
+        <genre id="Sport">
+        <!--facts for tab 1-->
+            <facts>
+                <name id="name">Homer Simpson</name>
+                <fact>Ned Flanders screams like a girl!</fact>
+                <entry>
+                    <entry_date>23rd November 2015</entry_date>
+                    <entry_code>ft001</entry_code>
+                </entry>
+            </facts>
+            <facts>
+                <name id="name">Homer Simpson</name>
+                <fact>Ned Flanders screams like a girl!</fact>
+                <entry>
+                    <entry_date>23rd November 2015</entry_date>
+                    <entry_code>ft001</entry_code>
+                </entry>
+            </facts>
+            <facts>
+                <name id="name">Homer Simpson</name>
+                <fact>Ned Flanders screams like a girl!</fact>
+                <entry>
+                    <entry_date>23rd November 2015</entry_date>
+                    <entry_code>ft001</entry_code>
+                </entry>
+            </facts>
+            <facts>
+                <name id="name">Homer Simpson</name>
+                <fact>Ned Flanders screams like a girl!</fact>
+                <entry>
+                    <entry_date>23rd November 2015</entry_date>
+                    <entry_code>ft001</entry_code>
+                </entry>
+            </facts>
+            <facts>
+                <name id="name">Homer Simpson</name>
+                <fact>Ned Flanders screams like a girl!</fact>
+                <entry>
+                    <entry_date>23rd November 2015</entry_date>
+                    <entry_code>ft001</entry_code>
+                </entry>
+            </facts>
+        </genre>
+        <genre id="History">
+        <!--facts for tab 1-->
+            <facts>
+                <name id="name">Homer Simpson</name>
+                <fact>Ned Flanders screams like a girl!</fact>
+                <entry>
+                    <entry_date>23rd November 2015</entry_date>
+                    <entry_code>ft001</entry_code>
+                </entry>
+            </facts>
+            <facts>
+                <name id="name">Homer Simpson</name>
+                <fact>Ned Flanders screams like a girl!</fact>
+                <entry>
+                    <entry_date>23rd November 2015</entry_date>
+                    <entry_code>ft001</entry_code>
+                </entry>
+            </facts>
+            <facts>
+                <name id="name">Homer Simpson</name>
+                <fact>Ned Flanders screams like a girl!</fact>
+                <entry>
+                    <entry_date>23rd November 2015</entry_date>
+                    <entry_code>ft001</entry_code>
+                </entry>
+            </facts>
+            <facts>
+                <name id="name">Homer Simpson</name>
+                <fact>Ned Flanders screams like a girl!</fact>
+                <entry>
+                    <entry_date>23rd November 2015</entry_date>
+                    <entry_code>ft001</entry_code>
+                </entry>
+            </facts>
+            <facts>
+                <name id="name">Homer Simpson</name>
+                <fact>Ned Flanders screams like a girl!</fact>
+                <entry>
+                    <entry_date>23rd November 2015</entry_date>
+                    <entry_code>ft001</entry_code>
+                </entry>
+            </facts>
+        </genre>
+        <genre id="Random">
+        <!--facts for tab 1-->
+            <facts>
+                <name id="name">Homer Simpson</name>
+                <fact>Ned Flanders screams like a girl!</fact>
+                <entry>
+                    <entry_date>23rd November 2015</entry_date>
+                    <entry_code>ft001</entry_code>
+                </entry>
+            </facts>
+            <facts>
+                <name id="name">Homer Simpson</name>
+                <fact>Ned Flanders screams like a girl!</fact>
+                <entry>
+                    <entry_date>23rd November 2015</entry_date>
+                    <entry_code>ft001</entry_code>
+                </entry>
+            </facts>
+            <facts>
+                <name id="name">Homer Simpson</name>
+                <fact>Ned Flanders screams like a girl!</fact>
+                <entry>
+                    <entry_date>23rd November 2015</entry_date>
+                    <entry_code>ft001</entry_code>
+                </entry>
+            </facts>
+            <facts>
+                <name id="name">Homer Simpson</name>
+                <fact>Ned Flanders screams like a girl!</fact>
+                <entry>
+                    <entry_date>23rd November 2015</entry_date>
+                    <entry_code>ft001</entry_code>
+                </entry>
+            </facts>
+            <facts>
+                <name id="name">Homer Simpson</name>
+                <fact>Ned Flanders screams like a girl!</fact>
+                <entry>
+                    <entry_date>23rd November 2015</entry_date>
+                    <entry_code>ft001</entry_code>
+                </entry>
+            </facts>
+        </genre>
+    </catalog>
