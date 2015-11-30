@@ -21,27 +21,9 @@
     <![endif]-->
   </head>
   <body>
-	<!--<div class="navbar-static-top navbar-inverse" id="home">
-		<div class="container">
-			<div class="navbar-brand">
-				<a href="#">My Site</a>
-			</div>
-			<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
-				Menu
-			</button>
-			<div class="collapse navbar-collapse navHeaderCollapse">
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#">Home</a></li>
-					<li><a href="#about">About</a></li>
-					<li><a href="#portfolio">Portfolio</a></li>
-					<li><a href="#contact">Contact</a></li>
-				</ul>
-			</div>
-		</div>
-	</div>-->
 	<div class="header">
 		<div class="container">
-			<h1>Interesting Facts!</h1>
+			<h1>INTERESTING FACTS!</h1>
 			<h2>Welcome to our website that gives you unusual facts</h2>
 		</div>
 	</div>
@@ -68,19 +50,16 @@
 							<?php
 								// Load the XML source
 								$xml = new DOMDocument;
-								$xml->load('books.xml');
+								$xml->load('facts.xml');
 								$xsl = new DOMDocument;
 								$xsl->substituteEntities = true; 
-								$xsl->load('books.xsl');
-								
+								$xsl->load('random.xsl');
 								// Configure the transformer
 								$proc = new XSLTProcessor;
 								$proc->importStyleSheet($xsl); // attach the xsl rules
 								
 								echo $proc->transformToXML($xml);
-								
 								?>
-							<h2 class="text-center">***DIV SECTION FOR FACTS SLIDER***</h2>
 							</div>
 						<button>Start Animation</button>
 					</div>
@@ -125,8 +104,11 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
+    
 	<script>
 	$(function() {
 	  $('a[href*=#]:not([href=#])').click(function() {

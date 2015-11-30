@@ -32,10 +32,16 @@ padding-bottom:20px;
     position:absolute;
 }
 
-.slider{
+#slider{
     background-color:green;
     min-height:500px;
+    position:relative;
 }
+
+#innerSlider{
+    position:relative;
+}
+
 
 h1{
     text-align:center;
