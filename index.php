@@ -32,10 +32,10 @@
 			<div class="container padding">
 				<div class="col-md-12">
 					<div class="btn-group-justified">
-						<div class="btn-group"><a href="#" target="_blank" class="btn btn-primary btn-md">Comedy</a></div>
-						<div class="btn-group"><a href="#" target="_blank" class="btn btn-primary btn-md">Sport</a></div>
-					  <div class="btn-group"><a href="#" target="_blank" class="btn btn-primary btn-md">History</a></div>
-						<div class="btn-group"><a href="#" target="_blank" class="btn btn-primary btn-md">Random</a></div>
+						<div class="btn-group"><button id ="com" class="btn btn-primary btn-md">Comedy</button></div>
+						<div class="btn-group"><button id ="sp"  class="btn btn-primary btn-md">Sport</button></div>
+						<div class="btn-group"><button id ="his" class="btn btn-primary btn-md">History</button></div>
+						<div class="btn-group"><button id ="ran" class="btn btn-primary btn-md">Random</button></div>
 					</div>
 				</div>
 			</div>
@@ -47,20 +47,8 @@
 				<div class="col-md-9">
 					<div id="slider">
 						<div id="innerSlider">
-							<?php
-								// Load the XML source
-								$xml = new DOMDocument;
-								$xml->load('facts.xml');
-								$xsl = new DOMDocument;
-								$xsl->substituteEntities = true; 
-								$xsl->load('random.xsl');
-								// Configure the transformer
-								$proc = new XSLTProcessor;
-								$proc->importStyleSheet($xsl); // attach the xsl rules
-								
-								echo $proc->transformToXML($xml);
-								?>
-							</div>
+							
+						</div>
 						<button>Start Animation</button>
 					</div>
 				</div>
@@ -71,11 +59,11 @@
 									<label for="name">Name:</label>
 									<input type="text" class="form-control" id="name" name="name" placeholder="Your name here"/>
 								</div>
-								<div class="form-group">
+								<div class="form-group" id="message">
 									<label for="message">Type fact here:</label>
 									<textarea class="form-control" id="message" name="message" placeholder="Your fact here"></textarea>
 								</div>
-								<div class="form-group">
+								<div class="form-group" >
 									<label for="genre">Choose the genre:</label>
 									  <select name="genre">
 									    <option value="comedy">Comedy</option>
@@ -88,7 +76,7 @@
 									<label for="email">Email:</label>
 									<input type="email" class="form-control" id="email" name="email" placeholder="example@example.com"/>
 								</div>
-								<button type="submit" class="btn btn-default">Submit</button>
+								<button type="submit" id="submit" class="btn btn-default">Submit</button>
 									
 						</form>
 					</div>
@@ -111,7 +99,7 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
     
-	<script>
+	<!--<script>
 	$(function() {
 	  $('a[href*=#]:not([href=#])').click(function() {
 		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -126,46 +114,66 @@
 		}
 	  });
 	});
+	-->
 	
+	<script>
+	/*	
+			window.onload = initAll;
+	    function initAll() {
+	      document.getElementById("#submit").onclick = validate;
+	    }
+	    function validate() {	
+			
+	        if(document.form.name.length == 0)
+	        {
+	          window.alert("Please enter your name");
+			  		document.getElementById("name").focus();
+	          document.getElementById("name").style.borderColor = "red";
+	          return false;
+	        }
+			if (document.genre.length ==  0 )  
+			{ 
+			window.alert("Please select a genre for your fact");
+			document.getElementById("genre").style.borderColor = "red";
+	          return false;
+	        }
+	                  
+	        if(document.form-group.email.email.length == 0)
+	        {
+	          window.alert("Please Enter your Email Address");
+			  document.getElementById("email").focus();
+	          document.getElementById("email").style.borderColor = "red";
+	          return false;
+	        }
+			  if(document.form.message.value.length == 0)
+	        {
+	          window.alert("Please enter you fact");
+	          document.getElementById("message").focus();
+	          return false;
+			  }
 	
-	window.onload = initAll;
-    function initAll() {
-      document.getElementById(".btn-default").onclick = validate;
-    }
-    function validate() {	
-		
-        if(document.form.name.value.length == 0)
-        {
-          window.alert("Please enter your name");
-		  		document.getElementById("name").focus();
-          document.getElementById("name").style.borderColor = "red";
-          return false;
-        }
-		if (document.form.genre.value.length ==  0 )  
-		{ 
-		window.alert("Please select a genre for your fact");
-		document.getElementById("genre").style.borderColor = "red";
-          return false;
-        }
-                  
-        if(document.form.email.value.length == 0)
-        {
-          window.alert("Please Enter your Email Address");
-		  document.getElementById("email").focus();
-          document.getElementById("email").style.borderColor = "red";
-          return false;
-        }
-		  if(document.form.message.value.length == 0)
-        {
-          window.alert("Please enter you fact");
-          document.getElementById("message").focus();
-          return false;
-		  }
-
-        return true;
-    }
-    
+	        return true;
+	    }
+    */
 	
+	</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script type = "text/javascript">
+		$(document).ready(function(){
+			$("#innerSlider").load("comedy.php");
+		});
+		$("#com").click(function(){
+			$("#innerSlider").load("comedy.php");
+		});
+		$("#his").click(function(){
+			$("#innerSlider").load("history.php");
+		});
+		$("#sp").click(function(){
+			$("#innerSlider").load("sport.php");
+		});
+		$("#ran").click(function(){
+			$("#innerSlider").load("random.php");
+		});
 	</script>
   </body>
 </html>
