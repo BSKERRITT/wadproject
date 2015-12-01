@@ -65,31 +65,33 @@
 					</div>
 				</div>
 				<div class="col-md-3 padding">
+					<div id="formBox">
 						<form role="form">
-							<div class="form-group">
-								<label for="name">Name:</label>
-								<input type="text" class="form-control" id="name" name="name" placeholder="Your name here"/>
-							</div>
-							<div class="form-group">
-								<label for="message">Type fact here:</label>
-								<textarea class="form-control" id="message" name="message" placeholder="Your fact here"></textarea>
-							</div>
-							<div class="form-group">
-								<label for="genre">Choose the genre:</label>
-								  <select name="genre">
-								    <option value="comedy">Comedy</option>
-								    <option value="sport">Sport</option>
-								    <option value="history">History</option>
-								    <option value="random">Random</option>
-								  </select>
-							</div>
-							<div class="form-group">
-								<label for="email">Email:</label>
-								<input type="email" class="form-control" id="email" name="email" placeholder="example@example.com"/>
-							</div>
-							<button type="submit" class="btn btn-default">Submit</button>
+								<div class="form-group">
+									<label for="name">Name:</label>
+									<input type="text" class="form-control" id="name" name="name" placeholder="Your name here"/>
+								</div>
+								<div class="form-group">
+									<label for="message">Type fact here:</label>
+									<textarea class="form-control" id="message" name="message" placeholder="Your fact here"></textarea>
+								</div>
+								<div class="form-group">
+									<label for="genre">Choose the genre:</label>
+									  <select name="genre">
+									    <option value="comedy">Comedy</option>
+									    <option value="sport">Sport</option>
+									    <option value="history">History</option>
+									    <option value="random">Random</option>
+									  </select>
+								</div>
+								<div class="form-group">
+									<label for="email">Email:</label>
+									<input type="email" class="form-control" id="email" name="email" placeholder="example@example.com"/>
+								</div>
+								<button type="submit" class="btn btn-default">Submit</button>
 									
 						</form>
+					</div>
 				</div>
 			</div>
 		</div>

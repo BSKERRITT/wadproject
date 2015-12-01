@@ -1,17 +1,13 @@
-/*.jumbotron{
-background-image:url('../bg.png');
-background-attachment:fixed;
-min-height:500px;
-margin-bottom:0px;
-}
 
+/*
 .bgalt1{
 background-color:#eee;
 min-height:400px;
 }*/
 
 body{
-    background-color:orange;
+    background-image:url("/images/sativa.png");
+    background-color:#92D9C7;
 }
 
 
@@ -27,13 +23,9 @@ padding-top:10px;
 padding-bottom:20px;
 }
 
-.comedy .sport .history .random{
-    float:left;
-    position:absolute;
-}
 
 #slider{
-    background-color:green;
+    background-color:#92D9C7;
     min-height:500px;
     position:relative;
 }
@@ -44,10 +36,20 @@ padding-bottom:20px;
 
 
 h1{
+    color:#AD162B;
     text-align:center;
+    font-family:Verdana, Geneva, sans-serif;
     font-size:60px;
+    font-weight:bold;
 }
 
 h2{
+    color:#AD162B;
+    font-family:Verdana, Geneva, sans-serif;
     text-align:center;
+}
+
+#formBox{
+    color:#AD162B;
+    position:relative;
 }
