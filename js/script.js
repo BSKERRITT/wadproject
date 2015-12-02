@@ -24,7 +24,7 @@ $(document).ready(function(){
 //button increase size animation
 $(document).ready(function() {
    $('.btn-md').mouseenter(function() {
-       $(this).animate({height: '+=5px'}, 'fast').fadeTo('slow', 0.8);
+       $(this).animate({height: '+=5px'}, 'fast').fadeTo('slow', 0.5);
    });
    $('.btn-md').mouseleave(function() {
        $(this).animate({height: '-=5px'}, 'fast').fadeTo('slow', 1); 

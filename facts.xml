@@ -1,176 +1,183 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet href="comedy.xsl" type="text/xsl" ?>
-    <catalog>
-        <genre id="Comedy">
-        <!--facts for tab 1-->
-            <facts>
-                <name id="name">Homer Simpson</name>
-                <fact>Comedy fact number 1</fact>
-                <entry>
-                    <entry_date>23rd November 2015</entry_date>
-                    <entry_code>ft001</entry_code>
-                </entry>
-            </facts>
-            <facts>
-                <name id="name">Marge Simpson</name>
-                <fact>Comedy fact number 2</fact>
-                <entry>
-                    <entry_date>23rd November 2015</entry_date>
-                    <entry_code>ft001</entry_code>
-                </entry>
-            </facts>
-            <facts>
-                <name id="name">Bart Simpson</name>
-                <fact>Comedy fact number 3</fact>
-                <entry>
-                    <entry_date>23rd November 2015</entry_date>
-                    <entry_code>ft001</entry_code>
-                </entry>
-            </facts>
-            <facts>
-                <name id="name">Lisa Simpson</name>
-                <fact>Comedy fact number 4</fact>
-                <entry>
-                    <entry_date>23rd November 2015</entry_date>
-                    <entry_code>ft001</entry_code>
-                </entry>
-            </facts>
-            <facts>
-                <name id="name">Maggie Simpson</name>
-                <fact>Comedy fact number 5</fact>
-                <entry>
-                    <entry_date>23rd November 2015</entry_date>
-                    <entry_code>ft001</entry_code>
-                </entry>
-            </facts>
-        </genre>
-        <genre id="Sport">
-        <!--facts for tab 2-->
-            <facts>
-                <name id="name">Homer Simpson</name>
-                <fact>Sports fact number 1</fact>
-                <entry>
-                    <entry_date>23rd November 2015</entry_date>
-                    <entry_code>ft001</entry_code>
-                </entry>
-            </facts>
-            <facts>
-                <name id="name">Homer Simpson</name>
-                <fact>Sports fact number 2</fact>
-                <entry>
-                    <entry_date>23rd November 2015</entry_date>
-                    <entry_code>ft001</entry_code>
-                </entry>
-            </facts>
-            <facts>
-                <name id="name">Homer Simpson</name>
-                <fact>Sports fact number 3</fact>
-                <entry>
-                    <entry_date>23rd November 2015</entry_date>
-                    <entry_code>ft001</entry_code>
-                </entry>
-            </facts>
-            <facts>
-                <name id="name">Homer Simpson</name>
-                <fact>Sports fact number 4</fact>
-                <entry>
-                    <entry_date>23rd November 2015</entry_date>
-                    <entry_code>ft001</entry_code>
-                </entry>
-            </facts>
-            <facts>
-                <name id="name">Homer Simpson</name>
-                <fact>Sports fact number 5</fact>
-                <entry>
-                    <entry_date>23rd November 2015</entry_date>
-                    <entry_code>ft001</entry_code>
-                </entry>
-            </facts>
-        </genre>
-        <genre id="History">
-        <!--facts for tab 3-->
-            <facts>
-                <name id="name">Homer Simpson</name>
-                <fact>History fact number 1</fact>
-                <entry>
-                    <entry_date>23rd November 2015</entry_date>
-                    <entry_code>ft001</entry_code>
-                </entry>
-            </facts>
-            <facts>
-                <name id="name">Homer Simpson</name>
-                <fact>History fact number 2</fact>
-                <entry>
-                    <entry_date>23rd November 2015</entry_date>
-                    <entry_code>ft001</entry_code>
-                </entry>
-            </facts>
-            <facts>
-                <name id="name">Homer Simpson</name>
-                <fact>History fact number 3</fact>
-                <entry>
-                    <entry_date>23rd November 2015</entry_date>
-                    <entry_code>ft001</entry_code>
-                </entry>
-            </facts>
-            <facts>
-                <name id="name">Homer Simpson</name>
-                <fact>History fact number 4</fact>
-                <entry>
-                    <entry_date>23rd November 2015</entry_date>
-                    <entry_code>ft001</entry_code>
-                </entry>
-            </facts>
-            <facts>
-                <name id="name">Homer Simpson</name>
-                <fact>History fact number 5</fact>
-                <entry>
-                    <entry_date>23rd November 2015</entry_date>
-                    <entry_code>ft001</entry_code>
-                </entry>
-            </facts>
-        </genre>
-        <genre id="Random">
-        <!--facts for tab 4-->
-            <facts>
-                <name id="name">Homer Simpson</name>
-                <fact>Random fact number 1</fact>
-                <entry>
-                    <entry_date>23rd November 2015</entry_date>
-                    <entry_code>ft001</entry_code>
-                </entry>
-            </facts>
-            <facts>
-                <name id="name">Homer Simpson</name>
-                <fact>Random fact number 2</fact>
-                <entry>
-                    <entry_date>23rd November 2015</entry_date>
-                    <entry_code>ft001</entry_code>
-                </entry>
-            </facts>
-            <facts>
-                <name id="name">Homer Simpson</name>
-                <fact>Random fact number 3</fact>
-                <entry>
-                    <entry_date>23rd November 2015</entry_date>
-                    <entry_code>ft001</entry_code>
-                </entry>
-            </facts>
-            <facts>
-                <name id="name">Homer Simpson</name>
-                <fact>Random fact number 4</fact>
-                <entry>
-                    <entry_date>23rd November 2015</entry_date>
-                    <entry_code>ft001</entry_code>
-                </entry>
-            </facts>
-            <facts>
-                <name id="name">Homer Simpson</name>
-                <fact>Random fact number 5</fact>
-                <entry>
-                    <entry_date>23rd November 2015</entry_date>
-                    <entry_code>ft001</entry_code>
-                </entry>
-            </facts>
-        </genre>
-    </catalog>
+<rss version="2.0">
+    <channel>
+    <title>RSS Feed</title>
+    <link></link>
+    <description>Description of RSS feed</description>
+        <catalog>
+            <genre id="Comedy">
+            <!--facts for tab 1-->
+                <facts>
+                    <name id="name">Homer Simpson</name>
+                    <fact>51% Of People Think Stormy Weather Affects Cloud Computing.</fact>
+                    <entry>
+                        <entry_date>23rd November 2015</entry_date>
+                        <entry_code>ft001</entry_code>
+                    </entry>
+                </facts>
+                <facts>
+                    <name id="name">Marge Simpson</name>
+                    <fact>You can change your language on Facebook to "Pirate."</fact>
+                    <entry>
+                        <entry_date>23rd November 2015</entry_date>
+                        <entry_code>ft001</entry_code>
+                    </entry>
+                </facts>
+                <facts>
+                    <name id="name">Bart Simpson</name>
+                    <fact>1 in 10 Americans thinks HTML --the language of web pages-- is a sexually transmitted disease.</fact>
+                    <entry>
+                        <entry_date>23rd November 2015</entry_date>
+                        <entry_code>ft001</entry_code>
+                    </entry>
+                </facts>
+                <facts>
+                    <name id="name">Lisa Simpson</name>
+                    <fact>In the U.S., there's an official Rock Paper Scissors League</fact>
+                    <entry>
+                        <entry_date>23rd November 2015</entry_date>
+                        <entry_code>ft001</entry_code>
+                    </entry>
+                </facts>
+                <facts>
+                    <name id="name">Maggie Simpson</name>
+                    <fact>The American secret service tried to spike Hitler's food with female hormones to feminize him.</fact>
+                    <entry>
+                        <entry_date>23rd November 2015</entry_date>
+                        <entry_code>ft001</entry_code>
+                    </entry>
+                </facts>
+            </genre>
+            <genre id="Sport">
+            <!--facts for tab 2-->
+                <facts>
+                    <name id="name">Homer Simpson</name>
+                    <fact>In 1969, El Salvador waged war on Honduras after it lost against it in a soccer match.</fact>
+                    <entry>
+                        <entry_date>23rd November 2015</entry_date>
+                        <entry_code>ft001</entry_code>
+                    </entry>
+                </facts>
+                <facts>
+                    <name id="name">Homer Simpson</name>
+                    <fact>FIFA has more member countries than the U.N.</fact>
+                    <entry>
+                        <entry_date>23rd November 2015</entry_date>
+                        <entry_code>ft001</entry_code>
+                    </entry>
+                </facts>
+                <facts>
+                    <name id="name">Homer Simpson</name>
+                    <fact>The city of Lusail, host of the 2022 FIFA World Cup Final game, does not exist yet.</fact>
+                    <entry>
+                        <entry_date>23rd November 2015</entry_date>
+                        <entry_code>ft001</entry_code>
+                    </entry>
+                </facts>
+                <facts>
+                    <name id="name">Homer Simpson</name>
+                    <fact>Argentina's retired soccer player Diego Maradona has his own religion made by his fans.</fact>
+                    <entry>
+                        <entry_date>23rd November 2015</entry_date>
+                        <entry_code>ft001</entry_code>
+                    </entry>
+                </facts>
+                <facts>
+                    <name id="name">Homer Simpson</name>
+                    <fact>In 1967, the Nigerian Civil War ground to a halt for two days because both sides wanted to watch soccer player Pele in an exhibition match.</fact>
+                    <entry>
+                        <entry_date>23rd November 2015</entry_date>
+                        <entry_code>ft001</entry_code>
+                    </entry>
+                </facts>
+            </genre>
+            <genre id="History">
+            <!--facts for tab 3-->
+                <facts>
+                    <name id="name">Homer Simpson</name>
+                    <fact>The eruption of Krakatoa in 1883 was the loudest sound in recorded history, heard 3,000 miles (4800 KM) away.</fact>
+                    <entry>
+                        <entry_date>23rd November 2015</entry_date>
+                        <entry_code>ft001</entry_code>
+                    </entry>
+                </facts>
+                <facts>
+                    <name id="name">Homer Simpson</name>
+                    <fact>Hitler led the first public anti-smoking campaign in modern history.</fact>
+                    <entry>
+                        <entry_date>23rd November 2015</entry_date>
+                        <entry_code>ft001</entry_code>
+                    </entry>
+                </facts>
+                <facts>
+                    <name id="name">Homer Simpson</name>
+                    <fact>From 1814 to 1830, the flag of the Kingdom of France was plain white.</fact>
+                    <entry>
+                        <entry_date>23rd November 2015</entry_date>
+                        <entry_code>ft001</entry_code>
+                    </entry>
+                </facts>
+                <facts>
+                    <name id="name">Homer Simpson</name>
+                    <fact>Life expectancy in Ancient Rome was from 20 to 30 years.</fact>
+                    <entry>
+                        <entry_date>23rd November 2015</entry_date>
+                        <entry_code>ft001</entry_code>
+                    </entry>
+                </facts>
+                <facts>
+                    <name id="name">Homer Simpson</name>
+                    <fact>Christmas was illegal in the U.S. until 1836 as it was considered an Ancient Pagan Holiday.</fact>
+                    <entry>
+                        <entry_date>23rd November 2015</entry_date>
+                        <entry_code>ft001</entry_code>
+                    </entry>
+                </facts>
+            </genre>
+            <genre id="Random">
+            <!--facts for tab 4-->
+                <facts>
+                    <name id="name">Homer Simpson</name>
+                    <fact>The iconic windows 95 startup sound was composed on a mac.</fact>
+                    <entry>
+                        <entry_date>23rd November 2015</entry_date>
+                        <entry_code>ft001</entry_code>
+                    </entry>
+                </facts>
+                <facts>
+                    <name id="name">Homer Simpson</name>
+                    <fact>The first webcam was created in Cambridge to check the status of a coffee pot.</fact>
+                    <entry>
+                        <entry_date>23rd November 2015</entry_date>
+                        <entry_code>ft001</entry_code>
+                    </entry>
+                </facts>
+                <facts>
+                    <name id="name">Homer Simpson</name>
+                    <fact>50% of Internet users will quit waiting for a video to load after 10 seconds.</fact>
+                    <entry>
+                        <entry_date>23rd November 2015</entry_date>
+                        <entry_code>ft001</entry_code>
+                    </entry>
+                </facts>
+                <facts>
+                    <name id="name">Homer Simpson</name>
+                    <fact>Earth is the only place in the Solar System where water can be present in its three states: solid, liquid and vapour.</fact>
+                    <entry>
+                        <entry_date>23rd November 2015</entry_date>
+                        <entry_code>ft001</entry_code>
+                    </entry>
+                </facts>
+                <facts>
+                    <name id="name">Homer Simpson</name>
+                    <fact>The Earth lost 40% of its wildlife in the past 40 years, according to the WWF.</fact>
+                    <entry>
+                        <entry_date>23rd November 2015</entry_date>
+                        <entry_code>ft001</entry_code>
+                    </entry>
+                </facts>
+            </genre>
+        </catalog>
+    </channel>
+</rss>

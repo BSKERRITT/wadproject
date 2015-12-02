@@ -13,17 +13,15 @@
 			</head>
 			<body>
 				<!--Sport-->
-				<h2>Sport Facts:</h2>
-				<xsl:apply-templates select="/catalog/genre[2]/facts/fact"/>
-				
-				
+				<p>Sport Fact:</p>
+				<xsl:apply-templates select="//catalog/genre[2]/facts/fact"/>
 				
 			</body>
 		</html>
 	</xsl:template>
 	
 	<!--Fact Templates-->
-	<xsl:template match="fact">
+	<xsl:template match="facts[1]/fact/text()">
 		<xsl:value-of select="."/><br />
 	</xsl:template>
 	

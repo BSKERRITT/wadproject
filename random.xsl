@@ -13,8 +13,8 @@
 			</head>
 			<body>
 				<!--Random-->
-				<h2>Random Facts:</h2>
-				<xsl:apply-templates select="/catalog/genre[4]/facts/fact"/>
+				<p>Random Fact:</p>
+				<xsl:apply-templates select="//catalog/genre[4]/facts/fact"/>
 				
 				
 				
@@ -23,7 +23,7 @@
 	</xsl:template>
 	
 	<!--Fact Templates-->
-	<xsl:template match="fact">
+	<xsl:template match="facts[1]/fact/text()">
 		<xsl:value-of select="."/><br />
 	</xsl:template>
 	
