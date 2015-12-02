@@ -19,28 +19,56 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <style type="text/css">
+		body {
+		  font: 16px/1.8 sans-serif;
+		}
+		.container {
+			width: 84%;
+			margin:0 auto;
+			max-width:1140px;
+		}
+		header {
+			width: 100%;
+			margin:0px auto;
+		}
+		h1 {
+			text-align: center;
+			color:#fff;
+			font: 95px/1 "Impact";
+			text-transform: uppercase;
+			display: block;
+			text-shadow:#253e45 -1px 1px 0,
+			#253e45 -2px 2px 0,
+			#d45848 -3px 3px 0,
+			#d45848 -4px 4px 0;
+			margin: 5% auto 5%;
+		}
+		
+	</style>
   </head>
   <body>
-	<div class="header">
-		<div class="container">
-			<h1>INTERESTING FACTS!</h1>
-			<h2>Welcome to our website that gives you unusual facts</h2>
+		<div class="header">
+			<div class="container">
+				<header>
+					<h1 id="fittext1">Text is now responsive</h1>
+				</header>
+			</div>
 		</div>
-	</div>
-	<div class="topics">
-		<div class="row1">
-			<div class="container padding">
-				<div class="col-md-12">
-					<div class="btn-group-justified">
-						<div class="btn-group"><button id ="com" class="btn btn-primary btn-md">Comedy</button></div>
-						<div class="btn-group"><button id ="sp"  class="btn btn-primary btn-md">Sport</button></div>
-						<div class="btn-group"><button id ="his" class="btn btn-primary btn-md">History</button></div>
-						<div class="btn-group"><button id ="ran" class="btn btn-primary btn-md">Random</button></div>
+		<div class="topics">
+			<div class="row1">
+				<div class="container padding">
+					<div class="col-md-12">
+						<div class="btn-group-justified">
+							<div class="btn-group"><button id ="com" class="btn btn-primary btn-md">COMEDY</button></div>
+							<div class="btn-group"><button id ="sp"  class="btn btn-primary btn-md">SPORT</button></div>
+							<div class="btn-group"><button id ="his" class="btn btn-primary btn-md">HISTORY</button></div>
+							<div class="btn-group"><button id ="ran" class="btn btn-primary btn-md">RANDOM</button></div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
 	
 		<div class="row2">
 			<div class="container">			
@@ -49,7 +77,6 @@
 						<div id="innerSlider">
 							
 						</div>
-						<button>Start Animation</button>
 					</div>
 				</div>
 				<div class="col-md-3 padding">
@@ -77,27 +104,33 @@
 									<input type="email" class="form-control" id="email" name="email" placeholder="example@example.com"/>
 								</div>
 								<button type="submit" id="submit" class="btn btn-default">Submit</button>
-									
 						</form>
 					</div>
 				</div>
 			</div>
 		</div>
+		
 
 	
-	<div class="bgalt2">
-		<div class="container padding">
-			<footer>&copy; Robbie Kane - Ian Donnelly - Ben Skerritt<br /></footer>
+		<div class="bgalt2">
+			<div class="container padding">
+				<footer>&copy; Robbie Kane - Ian Donnelly - Ben Skerritt<br /></footer>
+			</div>
 		</div>
-	</div>
 	
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-		<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="jquery.fittext.js"></script>
+    <script type="text/javascript">
+		$("#fittext1").fitText();
+		$("#fittext2").fitText(1.2);
+		$("#fittext3").fitText(1.1, { minFontSize: '50px', maxFontSize: '75px' });
+	</script>
     
 	<!--<script>
 	$(function() {
@@ -157,7 +190,12 @@
     */
 	
 	</script>
+	
+	<!--
+	This script tag is over-riding the JQuery UI script for animations, both the animations and AJAX work without it included.
+	It was obviously causing the Ajax to lag too because it's seemless now - Robbie
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	-->
 	<script type = "text/javascript">
 		$(document).ready(function(){
 			$("#innerSlider").load("comedy.php");
