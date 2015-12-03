@@ -24,7 +24,7 @@
 		<div class="header">
 			<div class="container">
 				<header>
-					<h1 id="fittext1">Text is now responsive</h1>
+					<h1 id="fittext1">RANDOM FACTS!</h1>
 				</header>
 			</div>
 		</div>
@@ -56,7 +56,7 @@
 				</div>
 				<div class="col-md-3 padding">
 					<div id="formBox">
-						<form role="form">
+						<form role="form" action="updatexml.php" method="post">
 								<div class="form-group">
 									<label for="name">Name:</label>
 									<input type="text" class="form-control" id="name" name="name" placeholder="Your name here"/>
@@ -74,10 +74,7 @@
 									    <option value="random">Random</option>
 									  </select>
 								</div>
-								<div class="form-group">
-									<label for="email">Email:</label>
-									<input type="email" class="form-control" id="email" name="email" placeholder="example@example.com"/>
-								</div>
+
 								<button type="submit" id="submit" class="btn btn-default">Submit</button>
 						</form>
 					</div>
@@ -100,7 +97,7 @@
 	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
-    <script src="jquery.fittext.js"></script>
+    
     <script type="text/javascript">
 		$("#fittext1").fitText();
 		$("#fittext2").fitText(1.2);
@@ -166,11 +163,6 @@
 	
 	</script>
 	
-	<!--
-	This script tag is over-riding the JQuery UI script for animations, both the animations and AJAX work without it included.
-	It was obviously causing the Ajax to lag too because it's seemless now - Robbie
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-	-->
 	<script type = "text/javascript">
 		$(document).ready(function(){
 			$("#innerSlider").load("comedy.php");

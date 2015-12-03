@@ -1,38 +1,24 @@
 <?php
+
+/*
+ * PHP SimpleXML
+ * Loading a XML from a file, adding new elements and editing elements
+ */
+//get author from form
 $name = $_POST["name"];
-$fact = $_POST["fact"];    
-    
-    $facts = array(
-        'name' => $_POST['name'],
-        'fact' => $_POST['fact'],
-    );
-if (file_exists('facts.xml')) {        
-    $doc = new DOMDocument();
-    $doc->load( 'facts.xml' );
-    
-    $doc->formatOutput = true;
-    $r = $doc->getElementsByTagName("genre")->item(4);
-    
-    $b = $doc->createElement("facts");
-    
-    $name = $doc->createElement("name");
-    $name->appendChild(
-        $doc->createTextNode( $facts["name"] )
-    );
-    $b->appendChild( $name );
-    
-    $fact = $doc->createElement("fact");
-    $fact->appendChild(
-        $doc->createTextNode( $facts["fact"] )
-    );
-    $b->appendChild( $fact );
-    
-    $r->appendChild( $b );
-        
-    $doc->save("facts.xml"); 
-    
-    header("Location: {$_SERVER['HTTP_REFERER']}");
-}else{
+$fact = $_POST["message"];
+
+if (file_exists('facts.xml')) {
+    //loads the xml and returns a simplexml object
+    $xml = simplexml_load_file('facts.xml');
+
+    //adding new child to the xml
+    $newChild = $xml->genre->addChild('facts');
+    $newChild->addChild('name', $name);
+    $newChild->addChild('fact', $fact);
+  
+} else {
     exit('Failed to open facts.xml.');
 }
+    file_put_contents('/home/ubuntu/workspace/facts.xml', $xml->asXML());
 ?>

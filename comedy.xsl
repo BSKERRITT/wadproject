@@ -21,8 +21,9 @@
 	</xsl:template>
 	
 	<!--Fact Templates-->
-	<xsl:template match="facts[1]/fact/text()">
+	<xsl:template match="fact">
 		<xsl:value-of select="."/><br />
 	</xsl:template>
 	
 </xsl:transform>
+	

@@ -37,7 +37,7 @@ $(document).ready(function(){
     });
 
 
-//functions to change body image when category button is pressed
+//functions to change body image when category button is presseded
 /*
 $("#com").click(function() {
     $("body").css("backgroundImage", "url(/images/comedy.jpg)");
