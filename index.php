@@ -25,14 +25,35 @@
     var y = document.forms["myForm"]["message"].value;
     if (x == null || x == "") {
         alert("Name must be filled out");
+        document.getElementById("name").style.borderColor = "red";
         return false;
 	    }
 	if (y == null || y == ""){
 		alert("Please enter a fact!");
+		document.getElementById("message").style.borderColor = "red";
 		return false;
 		}
 	}
 	</script>
+	<!--
+	<script>
+		function PL(){
+			var n = document.getElementById('name').value;
+			var d = 'name ' + n;
+			$.ajax({
+				type:"post",
+				url:"updatexml.php",
+				data:d,
+				cache:false,
+				success: function(html){
+					$("#innerSlider").html(html);
+				}
+				
+				
+			})
+			return false;
+		}
+	</script>-->
   </head>
   <body>
 		<div class="header">
@@ -70,7 +91,7 @@
 				</div>
 				<div class="col-md-3 padding">
 					<div id="formBox">
-						<form name="myForm" action="updatexml.php", "rss.php" method="post" onsubmit="return validateForm()">
+						<form name="myForm" action="updatexml.php" method="post" onsubmit="return validateForm">
 								<div class="form-group">
 									<label for="name">Name:</label>
 									<input type="text" class="form-control" id="name" name="name" placeholder="Your name here"/>
@@ -89,11 +110,7 @@
 									  </select>
 								</div>
 
-								<button type="submit" id="submit" class="btn btn-default" onsubmit="return false">Submit</button>
-								
-								<div>
-									
-								</div>
+								<button type="submit" id="submit" class="btn btn-default" onsubmit="return false" >Submit</button>
 						</form>
 					</div>
 				</div>
@@ -105,6 +122,12 @@
 		<div class="bgalt2">
 			<div class="container padding">
 				<footer>&copy; Robbie Kane - Ian Donnelly - Ben Skerritt<br /></footer>
+			</div>
+			<div id="rss">
+									
+			</div>
+			<div id="update">
+									
 			</div>
 		</div>
 	
@@ -171,6 +194,8 @@
 	<script type = "text/javascript">
 		$(document).ready(function(){
 			$("#innerSlider").load("comedy.php");
+			$("#rss").load("rss.php");
+			$("#update").load("comedy.php");
 		});
 		$("#com").click(function(){
 			$("#innerSlider").load("comedy.php");
@@ -185,5 +210,6 @@
 			$("#innerSlider").load("random.php");
 		});
 	</script>
+	
   </body>
 </html>
