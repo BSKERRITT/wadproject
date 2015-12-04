@@ -23,7 +23,7 @@
 	</xsl:template>
 	
 	<!--Fact Templates-->
-	<xsl:template match="facts[1]/fact/text()">
+	<xsl:template match="facts[last()]/fact/text()">
 		<xsl:value-of select="."/><br />
 	</xsl:template>
 	

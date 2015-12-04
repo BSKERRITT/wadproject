@@ -5,17 +5,19 @@
  * Loading a XML from a file, adding new elements and editing elements
  */
 
-$name = $_POST["name"];
+$title = $_POST["title"];
+$link = $_POST["link"];
 $description = $_POST["description"];
 $pubDate = $_POST["pubDate"];
 
-if (file_exists('rssfacts.xml')) {
+if (file_exists('rss.xml')) {
     //loads the xml and returns a simplexml object
-    $xml = simplexml_load_file('rssfacts.xml');
+    $xml = simplexml_load_file('rss.xml');
 
     //adding new child to the xml
     $newChild = $xml->addChild('item');
-    $newChild->addChild('name', $name);
+    $newChild->addChild('title', $title);
+    $newChild->addChild('link', $link);
     $newChild->addChild('description', $description);
     $newChild->addChild('pubDate', $pubDate);
 
@@ -23,23 +25,11 @@ if (file_exists('rssfacts.xml')) {
     //in this case we are changing the value 
     //of all children called <name>
     foreach ($xml->children() as $child)
+        $child->link = " ";
         $child->description = "ADDED A NEW FACT!";
-        $child->pubDate = getDate();
+        $child->pubDate = date('l dS \of F Y h:i:s A');
 } else {
-    exit('Failed to open rssfacts.xml');
+    exit('Failed to open rss.xml');
 }
-    file_put_contents('/home/ubuntu/workspace/rssfacts.xml', $xml->asXML());
-    
-    writeRSS();
-    function writeRSS(){
-        if (file_exists('rssfacts.xml')) {
-            //loads the xml and returns a simplexml object
-            $rssxml = simplexml_load_file('rssfacts.xml');
-            $newChild = $rssxml->channel->addChild('item');
-            $newChild->addChild('name', $name);
-            $newChild->addChild('description', $description);
-            $newChild->addChild('pubDate', $pubDate);
-            file_put_contents('/home/ubuntu/workspace/rssfacts.xml', $rssxml->asXML());
-        }
-    }
+    file_put_contents('/home/ubuntu/workspace/rss.xml', $xml->asXML());
 ?>

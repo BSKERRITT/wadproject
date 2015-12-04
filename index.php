@@ -19,6 +19,20 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <script>
+	function validateForm() {
+    var x = document.forms["myForm"]["name"].value;
+    var y = document.forms["myForm"]["message"].value;
+    if (x == null || x == "") {
+        alert("Name must be filled out");
+        return false;
+	    }
+	if (y == null || y == ""){
+		alert("Please enter a fact!");
+		return false;
+		}
+	}
+	</script>
   </head>
   <body>
 		<div class="header">
@@ -56,7 +70,7 @@
 				</div>
 				<div class="col-md-3 padding">
 					<div id="formBox">
-						<form action="updatexml.php" method="post">
+						<form name="myForm" action="updatexml.php", "rss.php" method="post" onsubmit="return validateForm()">
 								<div class="form-group">
 									<label for="name">Name:</label>
 									<input type="text" class="form-control" id="name" name="name" placeholder="Your name here"/>
@@ -76,6 +90,10 @@
 								</div>
 
 								<button type="submit" id="submit" class="btn btn-default" onsubmit="return false">Submit</button>
+								
+								<div>
+									
+								</div>
 						</form>
 					</div>
 				</div>
@@ -123,7 +141,7 @@
 	
 	<script>
 	/*	
-			window.onload = initAll;
+		window.onload = initAll;
 	    function initAll() {
 	      document.getElementById("#submit").onclick = validate;
 	    }
@@ -134,20 +152,6 @@
 	          window.alert("Please enter your name");
 			  		document.getElementById("name").focus();
 	          document.getElementById("name").style.borderColor = "red";
-	          return false;
-	        }
-			if (document.genre.length ==  0 )  
-			{ 
-			window.alert("Please select a genre for your fact");
-			document.getElementById("genre").style.borderColor = "red";
-	          return false;
-	        }
-	                  
-	        if(document.form-group.email.email.length == 0)
-	        {
-	          window.alert("Please Enter your Email Address");
-			  document.getElementById("email").focus();
-	          document.getElementById("email").style.borderColor = "red";
 	          return false;
 	        }
 			  if(document.form.message.value.length == 0)
@@ -162,6 +166,7 @@
     */
 	
 	</script>
+	
 	
 	<script type = "text/javascript">
 		$(document).ready(function(){
