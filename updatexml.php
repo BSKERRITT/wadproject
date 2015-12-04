@@ -18,7 +18,16 @@ if (file_exists('facts.xml')) {
     $newChild->addChild('fact', $fact);
   
 } else {
-    exit('Failed to open facts.xml.');
+    exit('Failed to open facts.xml');
 }
+
+
+
     file_put_contents('/home/ubuntu/workspace/facts.xml', $xml->asXML());
+
+if(isset($_SERVER['HTTP_REFERER'])){
+    header("Location: " . $_SERVER['HTTP_REFERER']);    
+} else {
+    echo "An Error";
+}
 ?>

@@ -56,7 +56,7 @@
 				</div>
 				<div class="col-md-3 padding">
 					<div id="formBox">
-						<form role="form" action="updatexml.php" method="post">
+						<form action="updatexml.php" method="post">
 								<div class="form-group">
 									<label for="name">Name:</label>
 									<input type="text" class="form-control" id="name" name="name" placeholder="Your name here"/>
@@ -75,7 +75,7 @@
 									  </select>
 								</div>
 
-								<button type="submit" id="submit" class="btn btn-default">Submit</button>
+								<button type="submit" id="submit" class="btn btn-default" onsubmit="return false">Submit</button>
 						</form>
 					</div>
 				</div>

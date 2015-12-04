@@ -23,8 +23,8 @@
                     <name>Maggie Simpson</name>
                     <fact>The American secret service tried to spike Hitler's food with female hormones to feminize him.</fact>
                 </facts>
-            <facts><name>Ian Donnelly</name><fact>Also loves SAB.</fact></facts>
-            </genre>
+            <facts><name>Ben Skerritt</name><fact>Test</fact></facts>
+            <facts><name>Ian</name><fact>hsgsg</fact></facts><facts><name>ian</name><fact>Aguerooooooo</fact></facts><facts><name>ian</name><fact>iofjdsfolk</fact></facts><facts><name>ian</name><fact>aguerrooooooo</fact></facts><facts><name>fhgfgf</name><fact>gjhgj</fact></facts></genre>
             <genre id="Sport">
             <!--facts for tab 2-->
                 <facts>
@@ -94,4 +94,4 @@
                     <fact>The Earth lost 40% of its wildlife in the past 40 years, according to the WWF.</fact>
                 </facts>
             </genre>
-        </catalog>
+    </catalog>

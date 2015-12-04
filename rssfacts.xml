@@ -1,0 +1,12 @@
+<rss version="2.0">
+    <channel>
+        <title>Facts RSS Feed</title>
+        <link>/home/ubuntu/workspace/facts.xml</link>
+        <description>Unusual Facts</description>
+            <item>
+                <name></name>
+                <description></description>
+                <pubDate>Sat, 9 Jan 2010 16:23:41 GMT</pubDate>                
+            </item>
+    </channel>
+</rss>
