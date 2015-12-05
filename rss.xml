@@ -1,14 +1,15 @@
 <?xml version="1.0"?>
 <rss version="2.0">
     <channel>
-        <title/>
-        <link></link>
+        <title>RSS Feed</title>
+        <link>https://wadproject-bskerritt.c9users.io/</link>
         <description>ADDED A NEW FACT!</description>
             <item>
-                <title/>
-                <link/>
+                <title>RSS Feed</title>
+                <link>https://wadproject-bskerritt.c9users.io/</link>
                 <description>ADDED A NEW FACT!</description>
-                <pubDate/>                
+                <name/>
+                <pubDate/>
             </item>
-    <item><title/><link>https://wadproject-bskerritt.c9users.io/</link><description/><pubDate/></item><pubDate>Saturday 05th of December 2015 11:27:01 AM</pubDate><item><title/><link>https://wadproject-bskerritt.c9users.io/</link><description/><pubDate/></item><item><title/><link>https://wadproject-bskerritt.c9users.io/</link><description/><pubDate/></item><item><title/><link>https://wadproject-bskerritt.c9users.io/</link><description/><pubDate/></item><item><title/><link>https://wadproject-bskerritt.c9users.io/</link><description/><pubDate/></item></channel>
+    <item><title/><link>https://wadproject-bskerritt.c9users.io/</link><description/><name/><pubDate/></item><name> </name><pubDate>Saturday 05th of December 2015 06:28:52 PM</pubDate><item><title/><link>https://wadproject-bskerritt.c9users.io/</link><description/><name>Ben Skerritt</name><pubDate/></item><item><title/><link>https://wadproject-bskerritt.c9users.io/</link><description/><name/><pubDate/></item><item><title/><link>https://wadproject-bskerritt.c9users.io/</link><description/><name/><pubDate/></item></channel>
 </rss>

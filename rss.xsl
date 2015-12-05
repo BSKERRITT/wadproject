@@ -15,18 +15,12 @@
 				<!--New Fact-->
 				<p><img src="images/pic_rss.gif"></img> FEED</p>
 				<p>OUR FACT DATABASE WAS LAST UPDATED ON:</p>
-				<xsl:apply-templates select="//channel/title/text()"/>
 				<xsl:apply-templates select="//channel/pubDate/text()"/>
-				
 			</body>
 		</html>
 	</xsl:template>
 	
 	<!--Fact Templates-->
-	<xsl:template match="//channel/title/text()">
-		<xsl:value-of select="."/><br />
-	</xsl:template>
-	
 	<xsl:template match="//channel/pubDate/text()">
 		<xsl:value-of select="."/><br />
 	</xsl:template>

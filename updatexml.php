@@ -41,6 +41,7 @@ if(isset($_SERVER['HTTP_REFERER'])){
 $title = $_POST["title"];
 $link = $_POST["link"];
 $description = $_POST["description"];
+$name = $_POST["name"];
 $pubDate = $_POST["pubDate"];
 
 if (file_exists('rss.xml')) {
@@ -54,14 +55,15 @@ if (file_exists('rss.xml')) {
     $newChild->addChild('title', $title);
     $newChild->addChild('link', 'https://wadproject-bskerritt.c9users.io/');
     $newChild->addChild('description', $description);
+    $newChild->addChild('name', $name);
     $newChild->addChild('pubDate', $pubDate);
 
     //changing the nodes values
     //in this case we are changing the value 
     //of all children called <name>
     foreach ($xml->children() as $child)
-        $child->link = "";
-        $child->description = "ADDED A NEW FACT!";
+        $child->link = "https://wadproject-bskerritt.c9users.io/";
+        $child->name = " ";
         $child->pubDate = date('l dS \of F Y h:i:s A');
 } else {
     exit('Failed to open rss.xml');
