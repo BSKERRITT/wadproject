@@ -33,11 +33,6 @@ if(isset($_SERVER['HTTP_REFERER'])){
 }
 
 
-
-
-
-
-
 /*
  * PHP SimpleXML
  * Loading a XML from a file, adding new elements and editing elements

@@ -109,16 +109,12 @@
 									    <option value="random">Random</option>
 									  </select>
 								</div>
-
 								<button type="submit" id="submit" class="btn btn-default" onsubmit="return false" >Submit</button>
 						</form>
 					</div>
 				</div>
 			</div>
 		</div>
-		
-
-	
 		<div class="bgalt2">
 			<div class="container padding">
 				<footer>&copy; Robbie Kane - Ian Donnelly - Ben Skerritt<br /></footer>
@@ -145,52 +141,6 @@
 		$("#fittext3").fitText(1.1, { minFontSize: '50px', maxFontSize: '75px' });
 	</script>
     
-	<!--<script>
-	$(function() {
-	  $('a[href*=#]:not([href=#])').click(function() {
-		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-		  var target = $(this.hash);
-		  target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-		  if (target.length) {
-			$('html,body').animate({
-			  scrollTop: target.offset().top
-			}, 1000);
-			return false;
-		  }
-		}
-	  });
-	});
-	-->
-	
-	<script>
-	/*	
-		window.onload = initAll;
-	    function initAll() {
-	      document.getElementById("#submit").onclick = validate;
-	    }
-	    function validate() {	
-			
-	        if(document.form.name.length == 0)
-	        {
-	          window.alert("Please enter your name");
-			  		document.getElementById("name").focus();
-	          document.getElementById("name").style.borderColor = "red";
-	          return false;
-	        }
-			  if(document.form.message.value.length == 0)
-	        {
-	          window.alert("Please enter you fact");
-	          document.getElementById("message").focus();
-	          return false;
-			  }
-	
-	        return true;
-	    }
-    */
-	
-	</script>
-	
-	
 	<script type = "text/javascript">
 		$(document).ready(function(){
 			$("#innerSlider").load("comedy.php");
@@ -210,6 +160,5 @@
 			$("#innerSlider").load("random.php");
 		});
 	</script>
-	
   </body>
 </html>
