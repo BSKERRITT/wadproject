@@ -19,6 +19,8 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    
+    <!--Form Validation for user submissions -->
     <script>
 	function validateForm() {
     var x = document.forms["myForm"]["name"].value;
@@ -35,6 +37,7 @@
 		}
 	}
 	</script>
+	
 	<!--
 	<script>
 		function PL(){
@@ -54,6 +57,7 @@
 			return false;
 		}
 	</script>-->
+	
   </head>
   <body>
 		<div class="header">
@@ -91,7 +95,7 @@
 				</div>
 				<div class="col-md-3 padding">
 					<div id="formBox">
-						<form name="myForm" action="updatexml.php" method="post" onsubmit="return validateForm">
+						<form name="myForm" action="updatexml.php" method="post" onsubmit="return validateForm()">
 								<div class="form-group">
 									<label for="name">Name:</label>
 									<input type="text" class="form-control" id="name" name="name" placeholder="Your name here"/>
@@ -134,13 +138,14 @@
 	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
-    
+    <!--Downloaded JQuery plugin for responsive text. Source > (http://fittextjs.com/)-->
     <script type="text/javascript">
 		$("#fittext1").fitText();
 		$("#fittext2").fitText(1.2);
 		$("#fittext3").fitText(1.1, { minFontSize: '50px', maxFontSize: '75px' });
 	</script>
     
+    <!--Ajax to load in each topic & RSS feed -->
 	<script type = "text/javascript">
 		$(document).ready(function(){
 			$("#innerSlider").load("comedy.php");

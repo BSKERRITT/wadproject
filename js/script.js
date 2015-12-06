@@ -14,14 +14,14 @@ if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
    xmlhttp.send();
 };
 
-//effects for facts text
+//jQuery effects for facts text
 $(document).ready(function(){
     $("#com, #sp, #his, #ran").click(function(){
         $("#innerSlider").effect("bounce", {times: 3}, 700);
     });
 });
 
-//button increase size animation
+//jQuery button increase size animation
 $(document).ready(function() {
    $('.btn-md').mouseenter(function() {
        $(this).animate({height: '+=5px'}, 'fast').fadeTo('slow', 0.5);
@@ -36,18 +36,7 @@ $(document).ready(function(){
         $('h1').effect('slide')
     });
 
-
-//functions to change body image when category button is presseded
-/*
-$("#com").click(function() {
-    $("body").css("backgroundImage", "url(/images/comedy.jpg)");
-});
-
-$("#sp").click(function() {
-    $("body").css("backgroundImage", "url(/images/sport.jpg)");
-});
-*/
-
+//Downloaded JQuery plugin to make text responsive. Source > (http://fittextjs.com/)
 (function( $ ){
 
   $.fn.fitText = function( kompressor, options ) {
